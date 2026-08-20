@@ -45,15 +45,16 @@ a:hover {
   position: sticky;
   top: 56px;
   align-self: flex-start;
+  text-align: center;
 }
 
 .avatar {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   border-radius: 6px;
   object-fit: cover;
   display: block;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 
@@ -79,6 +80,7 @@ a:hover {
 .contact-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 6px;
   font-family: var(--sans);
   font-size: 0.85rem;
@@ -91,6 +93,7 @@ a:hover {
 .section-nav {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 6px;
   font-family: var(--sans);
   font-size: 0.85rem;
