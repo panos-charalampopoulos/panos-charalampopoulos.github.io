@@ -2,8 +2,8 @@
   --bg: #14161c;
   --bg-alt: #1b1e26;
   --text: #eceef2;
-  --text-muted: #4FD437;
-  --accent: #4FD437;
+  --text-muted: #998840;
+  --accent: #998840;
   --border: #2a2e38;
   --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -13,8 +13,8 @@ html[data-theme="light"] {
   --bg: #fbfaf7;
   --bg-alt: #ffffff;
   --text: #1f2023;
-  --text-muted: #4FD437;
-  --accent: #4FD437;
+  --text-muted: #8C6C19;
+  --accent: #8C6C19;
   --border: #e3e0d8;
 }
 
@@ -128,16 +128,18 @@ a:hover {
   object-fit: cover;
   box-shadow: 0 4px 18px rgba(0,0,0,0.35);
   border: 3px solid #ffffff;
+  border-color: var(--accent)
   margin-bottom: 24px;
 }
 
 html[data-theme="light"] .hero-avatar {
-  border-color: #000000;
+  border-color: var(--accent);
 }
 
 .hero h1 {
   font-size: 2rem;
   margin: 0 0 6px;
+  color: var(--accent);
 }
 
 .hero .role {
