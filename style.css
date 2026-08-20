@@ -230,6 +230,25 @@ p {
   font-size: 0.9rem;
 }
 
+.underline-link {
+  text-decoration: underline;
+}
+
+.thin-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 24px 0;
+}
+
+.ads-list {
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+.ads-list li {
+  margin-bottom: 8px;
+}
+
 .research-item {
   margin-bottom: 18px;
 }
@@ -292,8 +311,8 @@ p {
 
 /* Project cards */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
@@ -311,7 +330,7 @@ p {
 
 .card p {
   color: var(--text-muted);
-  margin-bottom: 12px;
+  margin-bottom: 0;
   font-size: 0.92rem;
 }
 
