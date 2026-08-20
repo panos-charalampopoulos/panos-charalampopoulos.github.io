@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Panos Charalampopoulos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">Panos Charalampopoulos</a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">🌙</button>
+    <nav class="topnav">
+      <a href="about.html" class="active">About me</a>
+      <a href="publications.html">Publication list</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a Beatriu de Pinós Postdoctoral Fellow working on
+        <em>[your research area — e.g. transient astrophysics, supernovae, time-domain surveys]</em>.
+        Before this I was a postdoc at <em>[previous institution]</em>, and I completed my PhD at
+        <em>[PhD institution]</em> in <em>[year]</em>.
+      </p>
+      <p>
+        Replace this paragraph with 3–5 sentences on your background and what drives your research —
+        this is usually the first thing a visitor (a collaborator, a hiring committee, a student) reads.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research interests</h2>
+      <p>
+        Short overview of your research program — a paragraph on the big-picture questions you work on,
+        followed by 2–4 specific topics or methods below.
+      </p>
+      <div class="research-item">
+        <h3>Topic one</h3>
+        <p>One or two sentences describing this line of research and why it matters.</p>
+      </div>
+      <div class="research-item">
+        <h3>Topic two</h3>
+        <p>One or two sentences describing this line of research and why it matters.</p>
+      </div>
+      <div class="research-item">
+        <h3>Topic three</h3>
+        <p>One or two sentences describing this line of research and why it matters.</p>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li><time>2026</time> — Started my Beatriu de Pinós Fellowship at <em>[institution]</em>.</li>
+        <li><time>2025</time> — Add a milestone: talk given, paper accepted, award, etc.</li>
+        <li><time>2024</time> — Add another milestone here.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        <strong>Email:</strong> <a href="mailto:panos.charalampopoulos.astro@gmail.com">panos.charalampopoulos.astro@gmail.com</a><br>
+        <strong>Office:</strong> Room / building, Institute name, City, Country
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Panos Charalampopoulos.</p>
+    </footer>
+
+  </main>
+
+  <script src="theme.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

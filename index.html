@@ -9,116 +9,54 @@
 </head>
 <body>
 
-  <div class="page">
+  <header class="topbar">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">🌙</button>
+    <nav class="topnav">
+      <a href="about.html">About me</a>
+      <a href="publications.html">Publication list</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
 
-    <aside class="sidebar">
-      <img src="photo.jpg" alt="Panos Charalampopoulos" class="avatar">
-      <h1>Panos Charalampopoulos</h1>
-      <p class="role">Beatriu de Pinós Postdoctoral Fellow</p>
-      <p class="affiliation">Institute / Department name<br>City, Country</p>
+  <main class="hero">
+    <img src="photo.jpg" alt="Panos Charalampopoulos" class="hero-avatar">
+    <h1>Panos Charalampopoulos</h1>
+    <p class="role">Beatriu de Pinós Postdoctoral Fellow</p>
+    <p class="affiliation">Institute / Department name &middot; City, Country</p>
 
-      <nav class="contact-list">
-        <a href="mailto:panos.charalampopoulos.astro@gmail.com">panos.charalampopoulos.astro@gmail.com</a>
-        <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
-        <a href="#" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="#" target="_blank" rel="noopener">ORCID</a>
-        <a href="#" target="_blank" rel="noopener">CV (PDF)</a>
-      </nav>
+    <p class="bio">
+      Replace this with 2–3 sentences on who you are and what you work on — e.g.
+      "I study &lt;your research area&gt;, using &lt;your methods/data&gt; to understand &lt;the big question&gt;.
+      Previously I was at &lt;previous institution&gt;."
+    </p>
 
-      <nav class="section-nav">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </aside>
+    <div class="icon-row">
+      <a href="mailto:panos.charalampopoulos.astro@gmail.com" class="icon-link" aria-label="Email" title="Email">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2.5" y="4.5" width="19" height="15" rx="2"></rect>
+          <path d="M3.5 6.5l8.5 6.5 8.5-6.5"></path>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/panos-charalampopoulos-10a1qx7/" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24" width="26" height="26">
+          <rect width="24" height="24" rx="5" fill="#0A66C2"></rect>
+          <path fill="#fff" d="M7.2 9.6H4.6V19H7.2V9.6zM5.9 8.4c.9 0 1.5-.6 1.5-1.4C7.4 6.2 6.8 5.6 5.9 5.6c-.9 0-1.5.6-1.5 1.4 0 .8.6 1.4 1.5 1.4zM9.4 9.6h2.5v1.3h.1c.35-.65 1.2-1.35 2.5-1.35 2.7 0 3.2 1.75 3.2 4V19h-2.6v-4.3c0-1-.02-2.3-1.4-2.3-1.4 0-1.6 1.1-1.6 2.25V19H9.4V9.6z"></path>
+        </svg>
+      </a>
+      <a href="https://orcid.org/0000-0002-0326-6715" target="_blank" rel="noopener" class="icon-link" aria-label="ORCID" title="ORCID">
+        <svg viewBox="0 0 24 24" width="26" height="26">
+          <circle cx="12" cy="12" r="12" fill="#A6CE39"></circle>
+          <text x="12" y="15.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.5" font-weight="700" fill="#fff">iD</text>
+        </svg>
+      </a>
+    </div>
+  </main>
 
-    <main>
+  <footer>
+    <p>&copy; <span id="year"></span> Panos Charalampopoulos.</p>
+  </footer>
 
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          I am a Beatriu de Pinós Postdoctoral Fellow working on
-          <em>[your research area — e.g. transient astrophysics, supernovae, time-domain surveys]</em>.
-          Before this I was a postdoc at <em>[previous institution]</em>, and I completed my PhD at
-          <em>[PhD institution]</em> in <em>[year]</em>.
-        </p>
-        <p>
-          Replace this paragraph with 3–5 sentences on your background and what drives your research —
-          this is usually the first thing a visitor (a collaborator, a hiring committee, a student) reads.
-        </p>
-      </section>
-
-      <section id="research">
-        <h2>Research</h2>
-        <p>
-          Short overview of your research program — a paragraph on the big-picture questions you work on,
-          followed by 2–4 specific topics or methods below.
-        </p>
-        <div class="research-item">
-          <h3>Topic one</h3>
-          <p>One or two sentences describing this line of research and why it matters.</p>
-        </div>
-        <div class="research-item">
-          <h3>Topic two</h3>
-          <p>One or two sentences describing this line of research and why it matters.</p>
-        </div>
-        <div class="research-item">
-          <h3>Topic three</h3>
-          <p>One or two sentences describing this line of research and why it matters.</p>
-        </div>
-      </section>
-
-      <section id="publications">
-        <h2>Publications</h2>
-        <p class="muted">Full list on <a href="#">Google Scholar</a> / <a href="#">ADS</a> / <a href="#">arXiv</a>.</p>
-        <ol class="pub-list">
-          <li>
-            <strong>Paper title goes here</strong><br>
-            <span class="pub-authors"><u>P. Charalampopoulos</u>, Co-author A., Co-author B.</span><br>
-            <span class="pub-venue">Journal Name, Year</span>
-            &nbsp;·&nbsp; <a href="#">arXiv</a> &nbsp;·&nbsp; <a href="#">ADS</a> &nbsp;·&nbsp; <a href="#">PDF</a>
-          </li>
-          <li>
-            <strong>Another paper title</strong><br>
-            <span class="pub-authors">Co-author A., <u>P. Charalampopoulos</u>, Co-author C.</span><br>
-            <span class="pub-venue">Journal Name, Year</span>
-            &nbsp;·&nbsp; <a href="#">arXiv</a> &nbsp;·&nbsp; <a href="#">ADS</a>
-          </li>
-          <li>
-            <strong>A third paper title</strong><br>
-            <span class="pub-authors"><u>P. Charalampopoulos</u> et al.</span><br>
-            <span class="pub-venue">Journal Name, Year</span>
-            &nbsp;·&nbsp; <a href="#">arXiv</a>
-          </li>
-        </ol>
-      </section>
-
-      <section id="news">
-        <h2>News</h2>
-        <ul class="news-list">
-          <li><time>2026</time> — Started my Beatriu de Pinós Fellowship at <em>[institution]</em>.</li>
-          <li><time>2025</time> — Add a milestone: talk given, paper accepted, award, etc.</li>
-          <li><time>2024</time> — Add another milestone here.</li>
-        </ul>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          <strong>Email:</strong> <a href="mailto:panos.charalampopoulos.astro@gmail.com">panos.charalampopoulos.astro@gmail.com</a><br>
-          <strong>Office:</strong> Room / building, Institute name, City, Country
-        </p>
-      </section>
-
-      <footer>
-        <p>&copy; <span id="year"></span> Panos Charalampopoulos. Built with plain HTML &amp; CSS, hosted on GitHub Pages.</p>
-      </footer>
-
-    </main>
-  </div>
-
+  <script src="theme.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>

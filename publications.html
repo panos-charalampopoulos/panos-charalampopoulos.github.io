@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Panos Charalampopoulos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">Panos Charalampopoulos</a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">🌙</button>
+    <nav class="topnav">
+      <a href="about.html">About me</a>
+      <a href="publications.html" class="active">Publication list</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="muted">Full list on <a href="#">Google Scholar</a> &middot; <a href="#">ADS</a> &middot; <a href="#">arXiv</a>.</p>
+      <ol class="pub-list">
+        <li>
+          <strong>Paper title goes here</strong><br>
+          <span class="pub-authors"><u>P. Charalampopoulos</u>, Co-author A., Co-author B.</span><br>
+          <span class="pub-venue">Journal Name, Year</span>
+          &nbsp;&middot;&nbsp; <a href="#">arXiv</a> &nbsp;&middot;&nbsp; <a href="#">ADS</a> &nbsp;&middot;&nbsp; <a href="#">PDF</a>
+        </li>
+        <li>
+          <strong>Another paper title</strong><br>
+          <span class="pub-authors">Co-author A., <u>P. Charalampopoulos</u>, Co-author C.</span><br>
+          <span class="pub-venue">Journal Name, Year</span>
+          &nbsp;&middot;&nbsp; <a href="#">arXiv</a> &nbsp;&middot;&nbsp; <a href="#">ADS</a>
+        </li>
+        <li>
+          <strong>A third paper title</strong><br>
+          <span class="pub-authors"><u>P. Charalampopoulos</u> et al.</span><br>
+          <span class="pub-venue">Journal Name, Year</span>
+          &nbsp;&middot;&nbsp; <a href="#">arXiv</a>
+        </li>
+      </ol>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Panos Charalampopoulos.</p>
+    </footer>
+
+  </main>
+
+  <script src="theme.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
