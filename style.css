@@ -64,12 +64,11 @@ a:hover {
   margin-right: auto;
   font-weight: 700;
   font-size: 1rem;
-  color: var(--text);
+  color: var(--accent);
 }
 
 .brand:hover {
-  text-decoration: none;
-  color: var(--accent);
+  text-decoration: underline;
 }
 
 .theme-toggle {
