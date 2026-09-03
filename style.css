@@ -218,6 +218,10 @@ section {
   scroll-margin-top: 24px;
 }
 
+section.tight-top {
+  margin-top: -24px;
+}
+
 h2 {
   font-family: var(--sans);
   font-size: 0.8rem;
