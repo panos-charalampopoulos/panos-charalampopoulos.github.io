@@ -147,6 +147,16 @@ a:hover {
   margin-right: auto;
 }
 
+/* About me section: shift the photo up 0.5cm, and everything below it up
+   an extra 0.5cm (1cm total) */
+#about {
+  margin-top: -0.5cm;
+}
+
+#about .about-avatar {
+  margin-bottom: calc(24px - 0.5cm);
+}
+
 .hero h1 {
   font-size: 2rem;
   margin: 0 0 6px;
