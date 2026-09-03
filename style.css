@@ -121,22 +121,31 @@ a:hover {
   align-items: center;
 }
 
-.hero-avatar {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
+/* Shared avatar look (border/shadow) */
+.avatar-base {
+  display: block;
   box-shadow: 0 4px 18px rgba(0,0,0,0.35);
   border: 3px solid var(--accent);
   margin-bottom: 24px;
 }
 
-html[data-theme="light"] .hero-avatar {
-  border-color: var(--accent);
+/* Index page: full photo, rectangle, not cropped */
+.hero-avatar {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
 }
 
+/* About page: circular, centered */
 .about-avatar {
-  margin: 0 auto 24px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero h1 {
@@ -376,7 +385,10 @@ footer {
     text-align: center;
   }
   .hero-avatar {
-    width: 170px;
-    height: 170px;
+    max-width: 260px;
+  }
+  .about-avatar {
+    width: 160px;
+    height: 160px;
   }
 }
