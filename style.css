@@ -135,6 +135,10 @@ html[data-theme="light"] .hero-avatar {
   border-color: var(--accent);
 }
 
+.about-avatar {
+  margin: 0 auto 24px;
+}
+
 .hero h1 {
   font-size: 2rem;
   margin: 0 0 6px;
