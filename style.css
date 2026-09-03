@@ -377,6 +377,14 @@ a.card-link:hover {
   text-decoration: none;
 }
 
+a.card-link h3 {
+  color: var(--accent);
+}
+
+a.card-link p {
+  color: var(--text);
+}
+
 /* Topic pages (e.g. Tidal Disruption Events, Supernovae) */
 .back-link {
   display: inline-block;
@@ -391,6 +399,7 @@ a.card-link:hover {
 }
 
 .topic-figure {
+  max-width: 620px;
   margin: 0 0 28px;
 }
 
@@ -406,7 +415,7 @@ a.card-link:hover {
 .topic-figure figcaption {
   font-family: var(--sans);
   font-size: 0.78rem;
-  color: var(--text-muted);
+  color: var(--accent);
   margin-top: 8px;
   line-height: 1.4;
 }
