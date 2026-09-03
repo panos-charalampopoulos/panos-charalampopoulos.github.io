@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supernovae — Panos Charalampopoulos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">Panos Charalampopoulos</a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">🌙</button>
+    <nav class="topnav">
+      <a href="about.html">About me</a>
+      <a href="projects.html" class="active">Research</a>
+      <a href="publications.html">Publication list</a>
+    </nav>
+  </header>
+
+  <main class="page-content research-page">
+
+    <a href="projects.html" class="back-link">&larr; Back to Research</a>
+
+    <figure class="topic-figure">
+      <img src="SN.jpg" alt="Supernova">
+      <figcaption>Credit: [add credit]</figcaption>
+    </figure>
+
+    <h1 class="topic-title">Supernovae</h1>
+
+    <p class="topic-intro">
+      Supernovae are the explosive deaths of stars — either a massive star running out of fuel and collapsing catastrophically under its own gravity (core-collapse), or a white dwarf getting greedy, stealing mass from a companion until it tips over a critical limit and detonates entirely (thermonuclear). Either way, for a few weeks the explosion can outshine an entire galaxy, and the wreckage seeds the universe with the heavy elements that later end up in planets, and eventually, people.
+    </p>
+
+    <section id="selected-results">
+      <h2>Selected results</h2>
+      <div class="grid">
+
+        <article class="card research-card">
+          <div class="research-text">
+            <h3>Result 1</h3>
+            <p>...</p>
+          </div>
+        </article>
+
+        <article class="card research-card">
+          <div class="research-text">
+            <h3>Result 2</h3>
+            <p>...</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Panos Charalampopoulos.</p>
+    </footer>
+
+  </main>
+
+  <script src="theme.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

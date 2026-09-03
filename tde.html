@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tidal Disruption Events — Panos Charalampopoulos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">Panos Charalampopoulos</a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">🌙</button>
+    <nav class="topnav">
+      <a href="about.html">About me</a>
+      <a href="projects.html" class="active">Research</a>
+      <a href="publications.html">Publication list</a>
+    </nav>
+  </header>
+
+  <main class="page-content research-page">
+
+    <a href="projects.html" class="back-link">&larr; Back to Research</a>
+
+    <figure class="topic-figure">
+      <img src="tde.jpg" alt="Tidal Disruption Event">
+      <figcaption>Credit: [add credit]</figcaption>
+    </figure>
+
+    <h1 class="topic-title">Tidal Disruption Events</h1>
+
+    <p class="topic-intro">
+      Supermassive black holes lurk in the nuclei of galaxies. We have one in the nucleus of our own Milky Way! Tidal disruption events are what happens when a star wanders too close to such a supermassive black hole and the tidal forces across the star become stronger than its own self-gravity. So, instead of being swallowed whole, the star rips apart, gets stretched into a long stream of gas, part of which falls back and gets messily devoured, producing a bright flare that can outshine the whole galaxy. It's one of the few times a quiescent black hole announces itself directly, rather than through the motions of stars orbiting it.
+    </p>
+
+    <section id="selected-results">
+      <h2>Selected results</h2>
+      <div class="grid">
+
+        <article class="card research-card">
+          <div class="research-text">
+            <h3>Result 1</h3>
+            <p>...</p>
+          </div>
+        </article>
+
+        <article class="card research-card">
+          <div class="research-text">
+            <h3>Result 2</h3>
+            <p>...</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Panos Charalampopoulos.</p>
+    </footer>
+
+  </main>
+
+  <script src="theme.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
