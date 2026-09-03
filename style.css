@@ -213,6 +213,13 @@ a:hover {
   padding: 40px 24px 80px;
 }
 
+/* Research page: wider, aligned to the left instead of centered */
+.research-page {
+  max-width: 980px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
 section {
   margin-bottom: 48px;
   scroll-margin-top: 24px;
@@ -355,6 +362,61 @@ p {
   font-family: var(--sans);
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+/* Research cards: text on the left, image + credit on the right */
+.research-card {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.research-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.research-text p {
+  color: var(--text);
+  font-size: 0.97rem;
+  margin-bottom: 0;
+}
+
+.research-text p a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.research-figure {
+  flex: 0 0 260px;
+  margin: 0;
+}
+
+.research-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.research-figure figcaption {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+@media (max-width: 700px) {
+  .research-card {
+    flex-direction: column;
+  }
+  .research-figure {
+    flex: none;
+    width: 100%;
+  }
 }
 
 footer {
